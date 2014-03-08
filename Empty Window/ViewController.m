@@ -14,9 +14,11 @@
 
 @implementation ViewController
 
+#pragma mark - View lifecycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.button setTitle:@"Hi!" forState:UIControlStateNormal];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,6 +26,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)buttonPressed:(id)sender{
+    UIAlertView* av = [[UIAlertView alloc] initWithTitle:@"Howdy!" message:@"You tapped me." delegate:nil cancelButtonTitle:@"Cool" otherButtonTitles:nil];
+    
+    [av show];
+    
+}
+- (NSString*) dogMyCats: (NSString*) cats{
+    return @"dogs";
 }
 
 @end

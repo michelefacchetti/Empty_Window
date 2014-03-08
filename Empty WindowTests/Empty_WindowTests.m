@@ -7,28 +7,32 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
-@interface Empty_WindowTests : XCTestCase
+@interface EmptyWindowTests : XCTestCase
+@property ViewController* viewController;
 
 @end
 
-@implementation Empty_WindowTests
+@implementation EmptyWindowTests
 
 - (void)setUp
 {
     [super setUp];
+    self.viewController = [ViewController new];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+}
+
+- (void) testDogMyCats {
+    NSString* input = @"cats";
+    XCTAssertEqualObjects([self.viewController dogMyCats:input], @"dogs", @"ViewController dogMyCats: fails to produce dogs from \"%@\"",input);
+    
 }
 
 - (void)tearDown
 {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
-}
-
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end

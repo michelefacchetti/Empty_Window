@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property IBOutlet UIButton* button;
+
+- (NSString*) dogMyCats: (NSString*) cats;
+
 @end
