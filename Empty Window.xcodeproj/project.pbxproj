@@ -56,6 +56,8 @@
 		D059A61818CB29CD00AED28B /* Empty_WindowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Empty_WindowTests.m; sourceTree = "<group>"; };
 		D059A62218CB2B3A00AED28B /* MyRedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRedButton.h; sourceTree = "<group>"; };
 		D059A62318CB2B3A00AED28B /* MyRedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRedButton.m; sourceTree = "<group>"; };
+		D07A749618CB609500A12152 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D07A749718CB61A700A12152 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,8 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				it,
 			);
 			mainGroup = D059A5E118CB29CD00AED28B;
 			productRefGroup = D059A5EB18CB29CD00AED28B /* Products */;
@@ -284,6 +288,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				D059A5F718CB29CD00AED28B /* en */,
+				D07A749618CB609500A12152 /* fr */,
+				D07A749718CB61A700A12152 /* it */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -466,6 +472,7 @@
 				D059A61E18CB29CD00AED28B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D059A61F18CB29CD00AED28B /* Build configuration list for PBXNativeTarget "Empty WindowTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +481,7 @@
 				D059A62118CB29CD00AED28B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
