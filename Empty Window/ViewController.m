@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.button setTitle:@"Hi!" forState:UIControlStateNormal];
+    //[self.button setTitle:@"Hi!" forState:UIControlStateNormal];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -28,7 +28,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)buttonPressed:(id)sender{
-    UIAlertView* av = [[UIAlertView alloc] initWithTitle:@"Howdy!" message:@"You tapped me." delegate:nil cancelButtonTitle:@"Cool" otherButtonTitles:nil];
+    
+    UIAlertView* av = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"AlertGreeting", nil) message:NSLocalizedString(@"YouTappedMe", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"Cool", nil) otherButtonTitles: nil];
     
     [av show];
     

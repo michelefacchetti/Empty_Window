@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Empty Window
+
+  Created by Michele Facchetti on 09/03/14.
+  Copyright (c) 2014 Michele Facchetti. All rights reserved.
+*/
+"AlertGreeting" = "Ecco l'alert";
+
+"Cool" = "Figo!";
+
+"YouTappedMe" = "Mi hai premuto!";
