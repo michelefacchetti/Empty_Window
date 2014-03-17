@@ -18,7 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[self.button setTitle:@"Hi!" forState:UIControlStateNormal];
+    [self.button setTitle:@"Hi!" forState:UIControlStateNormal];
+    [self.button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
